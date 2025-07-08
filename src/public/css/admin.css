@@ -1,0 +1,137 @@
+.main{
+  margin: 0;
+  padding: 30px;
+  height: 100%;
+  gap: 30px;
+  background-color: #f6f5f5;
+}
+
+.top{
+  display: flex;
+  justify-self: center;
+  width: 75%;
+  height: 30%;
+  background-color: #ffffff;
+  justify-content: space-around;
+}
+
+.middle{
+  width: 75%;
+  margin-top: 30px;
+  justify-self: center;
+  gap: 30px;
+  background-color: #ffffff;
+}
+
+.middle__search-record-section{
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+.search_field{
+  display: flex;
+  width: 80%;
+  gap: 10px;
+}
+
+.middle__table-section{
+  justify-self: center;
+}
+
+.open-button{
+  border: none;
+  padding: 10px 20px;
+  background-color: purple;
+  border-radius: 10px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.record--modal_overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+#modal-toggle:checked ~ .record--modal_overlay {
+  display: flex;
+}
+
+.record--modal_wrapper{
+  width: 50%;
+   background-color: #fff;
+   border-radius: 10px;
+}
+
+.record--modal_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.record--modal_header h1 {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.close-button {
+}
+
+.record--modal_main {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 12px;
+  font-family: 'Helvetica', sans-serif;
+}
+
+.record--modal_main label {
+  display: block;
+  margin-bottom: 0.25rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.record--modal_main input {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 1.2rem;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.modal-buttons button {
+  flex: 1;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+}
+
+.modal-buttons .cancel {
+  background: #eee;
+  color: #333;
+}
+
+.modal-buttons .submit {
+  background: linear-gradient(to right, #e58fef, #b877f7);
+  color: white;
+  font-weight: bold;
+}

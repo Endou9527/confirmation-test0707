@@ -1,0 +1,43 @@
+main{
+  margin: 0;
+  padding: 30px;
+  height: 100%;
+  gap: 30px;
+  background-color: #f6f5f5;
+}
+
+.flame{
+  width: 70%;
+  padding: 30px 20px;
+  justify-self: center;
+  background-color: #ffffff;
+}
+
+.title_section,
+.record_section,
+.button_section{
+  justify-self: center;
+}
+
+.record_section{
+  width: 90%;
+}
+
+.record_date--input,
+.record_weight--input,
+.record_calories--input,
+.record_exercise-time--input,
+.record_exercise-content--input
+{
+  display: flex;
+  flex-direction: column;
+}
+
+span{
+  display: contents;
+}
+
+.button_section{
+  display: flex;
+  gap: 20px;
+}

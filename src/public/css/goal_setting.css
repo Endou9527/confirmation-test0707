@@ -1,0 +1,53 @@
+main{
+  margin: 0;
+  padding: 30px;
+  height: 100%;
+  gap: 30px;
+  background-color: #f6f5f5;
+}
+
+.flame{
+  width: 30%;
+  margin: 150px auto;
+  padding: 30px 20px;
+  justify-self: center;
+  background-color: #ffffff;
+  /* gap: 50px; */
+}
+
+.title_section{
+  width: 90%;
+  justify-self: center;
+}
+
+.title_inner{
+  margin: 0;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+.goal_section{
+  width: 90%;
+  justify-self: center;
+}
+
+.goal_input{
+  justify-self: center;
+}
+
+.goal_input--inner{
+  height: 30px;
+}
+
+.button_section{
+  margin-top: 50px;
+  width: 90%;
+  gap: 10px;
+  justify-self: center;
+}
+
+.button_section--inner{
+  display: flex;
+  gap: 15px;
+  justify-self: center;
+}
