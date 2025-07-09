@@ -52,4 +52,4 @@
       <a href="/login">ログインはこちら</a>
     </div>
   </form>
-@endsection
+  @endsection

@@ -14,18 +14,19 @@
 @endsection
 
 @section('input_section')
-<form action="/">
-  <div class="current_weight">
-    <label for="">現在の体重</label>
-    <input type="number" step="0.1" placeholder="現在の体重を入力">kg
-  </div>
-  <div class="target_weight">
-    <label for="">目標の体重</label>
-    <input type="number" step="0.1" placeholder="目標の体重を入力">kg
-  </div>
-</form>
+  <form action="/register" method="post">
+    @csrf
+    <div class="current_weight">
+      <label for="">現在の体重</label>
+      <input type="number" step="0.1" name="current_weight" placeholder="現在の体重を入力">kg
+    </div>
+    <div class="target_weight">
+      <label for="target">目標の体重</label>
+      <input type="number" name="target_weight" step="0.1" id="target" placeholder="目標の体重を入力">kg
+    </div>
 @endsection
 
 @section('button_section')
   <button type="submit">アカウント作成</button>
+  </form>
 @endsection

@@ -3,7 +3,6 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\WeightLogController;
 use App\Http\Controllers\UserController;
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -40,11 +39,6 @@ Route::get('/register/step1',[UserController::class,'step1']);
 // 会員登録画面（STEP2へ移行する）
 Route::post('/register/step2',[UserController::class,'step2']);
 // 会員登録処理（DB保存）
-Route::get('/register',[UserController::class,'register']);
-// ログイン画面を表示する
-Route::get('/login',[UserController::class,'login']);
-
-
-// Route::middleware('auth')->group(function () {
-//   Route::get('/admin', [UserController::class, 'admin'])->middleware('auth');
-//   });
+Route::post('/register',[UserController::class,'register']);
+// // ログイン画面を表示する
+// Route::get('/login',[UserController::class,'login']);
